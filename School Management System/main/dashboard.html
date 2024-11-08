@@ -48,7 +48,6 @@
                 </ul>
                 <button class="view-more"><i class="fas fa-newspaper"></i> View More</button>
             </div>
-            
 
             <!-- Upcoming Events Section -->
             <div class="panel events">
@@ -59,10 +58,11 @@
                     <li><strong>Dec 1</strong> - Parent-Teacher Conference</li>
                 </ul>
                 <button onclick="location.href='/resources'" class="interactive-button">Learn More</button>
-                <button  class="view-calendar"><i class="fas fa-calendar"></i> View Full Calendar</button>
+                <button class="view-calendar"><i class="fas fa-calendar"></i> View Full Calendar</button>
             </div>
 
-            <div class="panel performance" id="manage-courses-panel" >
+            <!-- Manage Subjects Section -->
+            <div class="panel performance" id="manage-courses-panel">
                 <h3><i class="fas fa-book"></i> Manage Subjects</h3>
                 <div class="courses-container">
                     <div class="available-subjects">
@@ -83,9 +83,7 @@
             <!-- Tasks Section -->
             <div class="panel tasks">
                 <h3><i class="fas fa-tasks"></i> Tasks & Reminders</h3>
-                <ul id="task-list">
-                   
-                </ul>
+                <ul id="task-list"></ul>
                 <input type="text" id="new-task" placeholder="Enter new task" />
                 <button class="add-task" onclick="addTask()"><i class="fas fa-plus-circle"></i> Add Task</button>
             </div>
@@ -95,7 +93,7 @@
 
     <!-- Include Chart.js for the Performance Chart -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="script.js"></script>
+    <script src="/js scripts/script.js"></script>
 
 </body>
 </html>
