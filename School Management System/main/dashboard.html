@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/styling/dashboard.css">
+    <link rel="stylesheet" href="/styling/login.css">
+    <link rel="stylesheet" href="/styling/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="#">Communication</a></li>
+            <li><a href="#">Examination</a></li>
+            <li><a href="#">Teacher</a></li>
+            <li><a href="#">Student</a></li>
+            <li><a href="#">Fees</a></li>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">About us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Dashboard Content -->
+    <div class="dashboard-container">
+        
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+            <h1>Welcome, Israel Shingenge</h1>
+            <p>Manage your courses, view upcoming events, and stay up-to-date with announcements.</p>
+        </section>
+
+        <!-- Dashboard Panels -->
+        <div class="dashboard-panels">
+
+            <!-- Announcements Section -->
+            <div class="panel announcements">
+                <h3><i class="fas fa-bullhorn"></i> Announcements</h3>
+                <ul>
+                    <li>Library hours extended during exam week!</li>
+                    <li>New resources added to the Math department.</li>
+                    <li>Sports day on November 25th.</li>
+                </ul>
+                <button class="view-more"><i class="fas fa-newspaper"></i> View More</button>
+            </div>
+            
+
+            <!-- Upcoming Events Section -->
+            <div class="panel events">
+                <h3><i class="fas fa-calendar-alt"></i> Upcoming Events</h3>
+                <ul>
+                    <li><strong>Nov 15</strong> - Math Exam</li>
+                    <li><strong>Nov 20</strong> - Science Fair</li>
+                    <li><strong>Dec 1</strong> - Parent-Teacher Conference</li>
+                </ul>
+                <button onclick="location.href='/resources'" class="interactive-button">Learn More</button>
+                <button  class="view-calendar"><i class="fas fa-calendar"></i> View Full Calendar</button>
+            </div>
+
+            <div class="panel performance" id="manage-courses-panel" >
+                <h3><i class="fas fa-book"></i> Manage Subjects</h3>
+                <div class="courses-container">
+                    <div class="available-subjects">
+                        <h4>Search and Enroll in Subjects</h4>
+                        <div class="search-container">
+                            <input type="text" id="subject-search" placeholder="Enter subject name">
+                            <button onclick="searchAndEnrollSubject()">Enroll</button>
+                        </div>
+                        <p id="search-result"></p>
+                    </div>
+                    <div class="enrolled-subjects">
+                        <h4>Your Enrolled Subjects</h4>
+                        <ul id="enrolled-subjects"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tasks Section -->
+            <div class="panel tasks">
+                <h3><i class="fas fa-tasks"></i> Tasks & Reminders</h3>
+                <ul id="task-list">
+                   
+                </ul>
+                <input type="text" id="new-task" placeholder="Enter new task" />
+                <button class="add-task" onclick="addTask()"><i class="fas fa-plus-circle"></i> Add Task</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Include Chart.js for the Performance Chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
