@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Scheduling</title>
+    <link href="/styling/examschedule.css" rel="stylesheet">
+</head>
+<body>  
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="communication.html">Communication</a>
+                <ul>
+                    <li><a href="/communication/alerts">Automated Alerts</a></li>
+                    <li><a href="/communication/fees-due">Fee Due Dates</a></li>
+                    <li><a href="/communication/exam-schedules">Exam Schedules</a></li>
+                    <li><a href="/communication/meetings">Meetings</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Examination</a></li>
+            <li><a href="#">Teacher</a></li>
+            <li><a href="#">Student</a></li>
+            <li><a href="#">Fees</a></li>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">About us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Exam Scheduling</h2>
+        <div class="card">
+            <div class="card-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="examType" class="form-label">Exam Type</label>
+                        <select class="form-select" id="examType" required>
+                            <option value="">Select Exam Type</option>
+                            <option value="midterm">Midterm Examination</option>
+                            <option value="final">Final Examination</option>
+                            <option value="quiz">Quiz</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <select class="form-select" id="subject" required>
+                            <option value="">Select Subject</option>
+                            <option value="math">Math</option>
+                            <option value="science">Science</option>
+                            <option value="english">English</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="examDate" class="form-label">Date</label>
+                        <input type="date" class="form-control" id="examDate" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="startTime" class="form-label">Start Time</label>
+                        <input type="time" class="form-control" id="startTime" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="duration" class="form-label">Duration (minutes)</label>
+                        <input type="number" class="form-control" id="duration" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Schedule Exam</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
