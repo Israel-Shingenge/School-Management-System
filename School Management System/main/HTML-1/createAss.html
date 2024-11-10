@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Assignment</title>
+    <link rel="stylesheet" href="/styling/login.css">
+    <link rel="stylesheet" href="styling/home.css">
+</head>
+<body>
+
+    <nav>
+        <!-- Navigation Links here -->
+    </nav>
+
+    <div class="homepage-container">
+        <div class="hero-text">
+            <h1>Create Assignment</h1>
+            <p>Design a new assignment for your students and set a deadline.</p>
+        </div>
+
+        <div class="form-container">
+            <form action="/assignments/create" method="POST">
+                <label for="title">Assignment Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+
+                <label for="due-date">Due Date:</label>
+                <input type="date" id="due-date" name="due-date" required>
+
+                <label for="class">Select Class:</label>
+                <select id="class" name="class" required>
+                    <option value="">Choose Class</option>
+                    <option value="class1">Class 1</option>
+                    <option value="class2">Class 2</option>
+                    <!-- Additional classes can be added here -->
+                </select>
+
+                <button type="submit" class="button">Create Assignment</button>
+            </form>
+        </div>
+
+        <div class="footer-info">
+            <p><strong>Contact Us:</strong> +264 61 567 234 | <strong>Email:</strong> support@academix.com</p>
+            <p>© 2024 Academix. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

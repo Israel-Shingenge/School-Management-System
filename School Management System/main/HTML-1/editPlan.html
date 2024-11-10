@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Lesson Plan</title>
+    <link rel="stylesheet" href="/styling/login.css">
+    <link rel="stylesheet" href="styling/home.css">
+</head>
+<body>
+
+    <nav>
+        <!-- Navigation Links here -->
+    </nav>
+
+    <div class="homepage-container">
+        <div class="hero-text">
+            <h1>Edit Lesson Plan</h1>
+            <p>Update or modify lesson plans to align with new objectives or topics.</p>
+        </div>
+
+        <div class="form-container">
+            <form action="/lesson-plan/edit" method="POST">
+                <label for="plan-id">Select Lesson Plan:</label>
+                <select id="plan-id" name="plan-id" required>
+                    <option value="">Choose Plan</option>
+                    <option value="plan1">Lesson Plan 1</option>
+                    <option value="plan2">Lesson Plan 2</option>
+                    <!-- Additional plans can be added here -->
+                </select>
+                <br> <br>
+                <label for="objectives">New Objectives:</label>
+                <textarea id="objectives" name="objectives"></textarea>
+                <br> <br>
+                <label for="resources">New Resources:</label>
+                <textarea id="resources" name="resources"></textarea>
+                <br> <br>
+                <label for="activities">New Activities:</label>
+                <textarea id="activities" name="activities"></textarea>
+
+                <button type="submit" class="button">Update Plan</button>
+            </form>
+        </div>
+
+        <div class="footer-info">
+            <p><strong>Contact Us:</strong> +264 61 567 234 | <strong>Email:</strong> support@academix.com</p>
+            <p>© 2024 Academix. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

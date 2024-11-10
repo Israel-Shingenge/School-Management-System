@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Lesson Plans</title>
+    <link rel="stylesheet" href="/styling/login.css">
+    <link rel="stylesheet" href="styling/home.css">
+</head>
+<body>
+
+    <nav>
+        <!-- Navigation Links here -->
+    </nav>
+
+    <div class="homepage-container">
+        <div class="hero-text">
+            <h1>View Lesson Plans</h1>
+            <p>Access and review previously created lesson plans.</p>
+        </div>
+
+        <div class="form-container">
+            <form action="/lesson-plan/view" method="POST">
+                <label for="class">Select Class:</label>
+                <select id="class" name="class" required>
+                    <option value="">Choose Class</option>
+                    <option value="class1">Class 1</option>
+                    <option value="class2">Class 2</option>
+                    <!-- Additional classes can be added here -->
+                </select>
+
+                <button type="submit" class="button">View Plans</button>
+            </form>
+        </div>
+
+        <div class="footer-info">
+            <p><strong>Contact Us:</strong> +264 61 567 234 | <strong>Email:</strong> support@academix.com</p>
+            <p>© 2024 Academix. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

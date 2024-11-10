@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submissions</title>
+    <link rel="stylesheet" href="/styling/login.css">
+    <link rel="stylesheet" href="styling/home.css">
+</head>
+<body>
+
+    <nav>
+        <!-- Navigation Links here -->
+    </nav>
+
+    <div class="homepage-container">
+        <div class="hero-text">
+            <h1>Review Submissions</h1>
+            <p>View and evaluate student submissions for assignments.</p>
+        </div>
+
+        <div class="form-container">
+            <form action="/assignments/review" method="POST">
+                <label for="assignment">Select Assignment:</label>
+                <select id="assignment" name="assignment" required>
+                    <option value="">Choose Assignment</option>
+                    <option value="assignment1">Assignment 1</option>
+                    <option value="assignment2">Assignment 2</option>
+                    <!-- Additional assignments can be added here -->
+                </select>
+
+                <button type="submit" class="button">View Submissions</button>
+            </form>
+        </div>
+
+        <div class="footer-info">
+            <p><strong>Contact Us:</strong> +264 61 567 234 | <strong>Email:</strong> support@academix.com</p>
+            <p>© 2024 Academix. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
