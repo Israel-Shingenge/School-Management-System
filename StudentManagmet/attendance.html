@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="php.php">View Profile</a></li>
+  <li><a href="grades.php">Grades</a></li>
+  <li><a href="index.html">Timetable</a></li>
+  <li><a href="attendance.html">Attendance</a></li>
+  <li><a href="AcademicRecord.php">Academic Record</a></li>
+</ul>
+<h2> Welcome to Attendance</h2>
+<hr>
+
+    <main>
+       
+    </main>
+    <div>
+        <form action="/action_page.php">
+        <h4>Teacher information</h4>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Subject</label>
+          <select id="country" name="country">
+            <option value="Mathematics">Mathematics</option>
+            <option value="English">English</option>
+            <option value="Computer">Computer</option>
+          </select>
+   
+    <h2>Mark Attendance</h2>
+    <label for="attendance_date">Select Date:</label>
+    <input type="date" id="attendance_date" required>
+    
+    <form id="attendanceForm">
+        
+            <p>The <strong>Check the box if student is present</p>
+                <form id="attendanceForm" onsubmit="return validateForm()">
+            <form action="/action_page.php">
+              <input type="checkbox" id="Present" name="Present" value="Present">
+              <label for="vehicle1"> Mathues Nehale</label><br>
+              <input type="checkbox" id="Doe" name="Doe" value="Doe">
+              <label for="vehicle2"> John Doe</label><br>
+              <input type="checkbox" id="Nehale" name="Nehale" value="Nehale">
+              <label for="vehicle3">Jolene Nehale</label><br><br>
+             
+            
+            </form> 
+            
+        <button type="button" onclick="submitAttendance()">Submit Attendance</button>
+    
+
+    </form>
+   
+    <script src="script.js"></script>
+</body>
+</html>
