@@ -1,0 +1,205 @@
+/* General Body Styling */
+body {
+    margin-top: 20px;
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Container for the page */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar Styling */
+.navbar ul {
+    list-style-type: none;
+    background-color: navy; /* Match the navbar color */
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a:hover {
+    background-color: #0781fc;
+    color: black;
+}
+
+/* Student Details Styling */
+.student-details {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.student-details h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.student-details p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.student-details strong {
+    color: #555;
+}
+
+/* Form Styling */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+form label {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #555;
+}
+
+form input[type="number"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+form button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: rgb(66, 66, 66); /* Match the navbar color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0019fb; /* Darker shade for hover */
+}
+
+/* Error Message Styling */
+p {
+    font-size: 16px;
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: navy;
+    color: white;
+}
+
+table td {
+    background-color: #fff;
+    color: #555;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #006eff;
+}
+
+/* Sidebar Styling (if used) */
+.sidebar {
+    background-color: navy;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar img.rounded-circle {
+    border-radius: 50%;
+}
+
+.sidebar a {
+    margin-left: 10px;
+    display: block;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/* Card Styling */
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Content Area Styling */
+.content {
+    background-color: whitesmoke;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: navy;
+    color: white;
+}
+
+table td {
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #dddddd;
+}
