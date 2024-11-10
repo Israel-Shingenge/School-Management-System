@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Weekly Schedule</title>
+    <link rel="stylesheet" href="/styling/login.css">
+    <link rel="stylesheet" href="styling/home.css">
+</head>
+<body>
+
+    <nav>
+        <!-- Navigation Links here -->
+    </nav>
+
+    <div class="homepage-container">
+        <div class="hero-text">
+            <h1>Weekly Schedule</h1>
+            <p>Plan ahead with an overview of classes and events for the week.</p>
+        </div>
+
+        <div class="form-container">
+            <form action="/schedule/weekly" method="POST">
+                <label for="week-start">Week Starting:</label>
+                <input type="date" id="week-start" name="week-start" required>
+
+                <button type="submit" class="button">View Weekly Schedule</button>
+            </form>
+        </div>
+
+        <div class="footer-info">
+            <p><strong>Contact Us:</strong> +264 61 567 234 | <strong>Email:</strong> support@academix.com</p>
+            <p>© 2024 Academix. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
