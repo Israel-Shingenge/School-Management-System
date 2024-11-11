@@ -4,23 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="/SchoolManagementSystem/styling/login.css">
-    <link rel="stylesheet" href="/SchoolManagementSystem/styling/home.css">
+    <link rel="stylesheet" href="/styling/login.css">
+    <link rel="stylesheet" href="/styling/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
     <nav>
         <ul>
-            <li><a href="/SchoolManagementSystem/index.html">Home</a></li>
-            <li><a href="dashboard.html">Dashboard</a></li>
-            <li><a href="#">Communication</a></li>
-            <li><a href="#">Examination</a></li>
-            <li><a href="#">Teacher</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/main/dashboard.html">Dashboard</a></li>
+            <li><a href="/main/communication.html">Communication</a></li>
+            <li><a href="/main/examdashboard/examdashboard.html">Examination</a>
+                <ul>
+                    <li><a href="/main/examdashboard/examschedule.html">Exam Schedules</a></li>
+                    <li><a href="/main/examdashboard/grades.html">Grades</a></li>
+                    <li><a href="/main/examdashboard/reportcard.html">Report Card</a></li>
+                </ul>        
+                </li>
+            <li><a href="/main/teacherMan.html">Teacher</a></li>
             <li><a href="#">Student</a></li>
-            <li><a href="#">Fees</a></li>
-            <li><a href="#">Library</a></li>
-            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="/main/fee.html">Fees</a></li>
+            <li><a href="/main/AboutUs.html">About us</a></li>
         </ul>
     </nav>
 
@@ -28,7 +33,7 @@
         <!-- Sign Up Form -->
         <div class="form-container">
             <h2>Sign Up</h2>
-            <form id="signUpForm" action="/SchoolManagementSystem/backend/Log.php" method="POST">
+            <form id="signUpForm" action="backend/Log.php" method="POST">
                 
                 <!-- Role Selection -->
                 <label for="role">Register as:</label>
@@ -72,11 +77,11 @@
 
         <!-- Sign Up Image -->
         <div class="image-container">
-            <img src="/SchoolManagementSystem/images/Desk2.jpeg" alt="Sign Up Illustration">
+            <img src="/images/Desk2.jpeg" alt="Sign Up Illustration">
         </div>
     </div>
 
-    <script src="/SchoolManagementSystem/js scripts/script.js" defer></script>
+    <script src="/js scripts/script.js" defer></script>
 
 </body>
 </html>

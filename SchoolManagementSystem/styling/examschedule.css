@@ -36,14 +36,20 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-size: 16px;
     padding: 10px 15px;
-    transition: background-color 0.3s;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
 }
 
-nav ul li a:hover,
+nav ul li a:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    transform: scale(0.05);
+}
+
 nav ul li a:focus {
     background-color: #007bff;
     border-radius: 5px;
@@ -51,14 +57,20 @@ nav ul li a:focus {
 
 /* Dropdown Menu */
 nav ul li ul {
-    display: none;
     position: absolute;
-    background-color: navy;
-    padding: 10px 0;
-    border-radius: 5px;
     top: 100%;
     left: 0;
+    background-color: navy;
+    border-radius: 5px;
+    display: none;
+    min-width: 200px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 0; 
+}
+
+.container h1 {
+    text-align: center; 
+    margin-bottom: 30px;
 }
 
 nav ul li:hover ul {
@@ -76,6 +88,13 @@ nav ul li ul li a {
     text-decoration: none;
     font-size: 14px;
 }
+
+.container h1 {
+    text-align: center; 
+    margin-bottom: 30px;
+}
+
+
 
 .container {
     margin-top: 100px;
